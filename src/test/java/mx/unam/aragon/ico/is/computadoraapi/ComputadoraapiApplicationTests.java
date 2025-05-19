@@ -17,28 +17,28 @@ class ComputadoraapiApplicationTests {
 
 //    @Test
 //    void insetarComputadora(){
-//        Computadora computadora = new Computadora(0,"HP", "Pavillion 3000", null, 13000.0f);
+//        Computadora computadora = new Computadora(0,"HP", "Pavillion 8000", null, 13000.0f);
 //        computadoraRepository.save(computadora);
 //    }
 
-    @Test
-    void leerComputadora(){
-        Long claveTmp = 2L;
-        Computadora tmp = computadoraRepository.findComputadoraByClave(claveTmp);
-        System.out.println(tmp);
-    }
-
-    @Test
-    void eliminarComputadora(){
-        Long claveTmp = 2L;
-        computadoraRepository.deleteById(claveTmp);
-    }
-
-    @Test
-    void actualizarComputadora(){
-        Long claveTmp = 1L;
-        Computadora tmp = computadoraRepository.findComputadoraByClave(claveTmp);
-        tmp.setModelo("Patito 2000");
-        computadoraRepository.save(tmp);
-    }
+//    @Test
+//    void leerComputadora(){
+//        Long claveTmp = 2L;
+//        Computadora tmp = computadoraRepository.findComputadoraByClave(claveTmp);
+//        System.out.println(tmp);
+//    }
+//
+//    @Test
+//    void eliminarComputadora(){
+//        Long claveTmp = 2L;
+//        computadoraRepository.deleteById(claveTmp);
+//    }
+//
+//    @Test
+//    void actualizarComputadora(){
+//        Long claveTmp = 1L;
+//        Computadora tmp = computadoraRepository.findComputadoraByClave(claveTmp);
+//        tmp.setModelo("Patito 2000");
+//        computadoraRepository.save(tmp);
+//    }
 }

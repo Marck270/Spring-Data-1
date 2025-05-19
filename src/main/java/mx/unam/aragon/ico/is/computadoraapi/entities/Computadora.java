@@ -1,6 +1,8 @@
 package mx.unam.aragon.ico.is.computadoraapi.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.util.Objects;
 
@@ -11,6 +13,8 @@ public class Computadora {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int clave;
     @Column(name = "marca_computadora", nullable = true, length = 50)
+    @NotBlank(message = "¿Eres gallego o que? no se aceptan blanquitos")
+    @NotNull(message = "No puede ser null")
     private String marca;
     @Column(name = "modelo_computadora", nullable = false)
     private String modelo;
